@@ -1,0 +1,14 @@
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Warning"
+    }
+  },
+  "AppSettings": {
+    "B2BApiBaseAddress": "",
+    "B2BApiClientKey": "",
+    "B2BApiSubscriptionKey": "",
+    "TokenRequestEndpoint": ""
+  },
+  "AllowedHosts": "*"
+}
