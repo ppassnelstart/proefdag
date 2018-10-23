@@ -1,0 +1,44 @@
+﻿@model IEnumerable<SnelStart.B2BClient.Web.Models.VerkoopfactuurModel>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Factuurnummer)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Factuurdatum)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Factuurbedrag)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Factuurnummer)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Factuurdatum)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Factuurbedrag)
+                </td>
+                <td>
+                    @Html.ActionLink("Details", "Details", new { id = item.Id })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

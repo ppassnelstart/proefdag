@@ -1,0 +1,49 @@
+﻿@model SnelStart.B2BClient.Web.Models.VerkoopfactuurModel
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>VerkoopfactuurModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Id)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Uri)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Uri)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Factuurnummer)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Factuurnummer)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Factuurdatum)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Factuurdatum)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Factuurbedrag)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Factuurbedrag)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>
